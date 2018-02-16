@@ -1,5 +1,11 @@
 # Feature toggle client
 
+## Requirements
+
+* Node >=8.0
+* yarn
+
+
 ## Installation
 
 As of now, this module is published only in a private repository.
@@ -12,14 +18,7 @@ yarn add https://github.com/hmcts/div-feature-toggle-client
 
 # Install a specific version
 yarn add https://github.com/hmcts/div-feature-toggle-client#1.0.7
-
-## Prerequisites
-
-As of now, this module is published only in a private repository.
-We are working on publishing this project to NPM.
-
-* Node >=8.0
-* yarn
+```
 
 ## Usage
 
@@ -72,7 +71,7 @@ if(features.feature1){
 
 #### Create a helper
 
-To test environements using codecept we suggest you create a codeceptjs helper `/test/end-to-end/helpers/featureToggleHelper` e.g.
+To test environments using codecept we suggest you create a codeceptjs helper `/test/end-to-end/helpers/featureToggleHelper` e.g.
 
 ```
 'use strict';
