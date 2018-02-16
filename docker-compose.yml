@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  dev:
+    image: reform/yarn
+    environment:
+      - NODE_ENV=dev
+    volumes:
+      - ".:/code"
+    working_dir: '/code'
+    command: ["yarn", "test"]

@@ -1,0 +1,32 @@
+{
+  "name": "@hmcts/div-feature-toggle-client",
+  "version": "1.0.7",
+  "license": "MIT",
+  "description": "Feature toggle client",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_PATH=. mocha './src/**/*.test.js' --reporter spec --recursive",
+    "lint": "eslint .",
+    "test-nsp": "nsp check",
+    "sonar-scanner": "sonar-scanner",
+    "test-coverage": "LOG_LEVEL=OFF istanbul cover _mocha 'src/**/*.test.js' -- --recursive"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "create-thenable": "^1.0.2",
+    "eslint": "^4.17.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "nsp": "^3.1.0",
+    "sinon": "^4.3.0",
+    "sinon-chai": "^2.14.0",
+    "sonar-scanner": "^3.0.3"
+  },
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4",
+    "eslint": "^4.17.0"
+  }
+}
